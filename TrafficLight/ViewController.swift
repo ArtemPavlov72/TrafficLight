@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var orangeLight: UIView!
     @IBOutlet var greenLight: UIView!
     @IBOutlet var showTextButton: UIButton!
+    var button = 0
     
     
     override func viewDidLoad() {
@@ -22,16 +23,38 @@ class ViewController: UIViewController {
         greenLight.layer.cornerRadius = 80
         showTextButton.layer.cornerRadius = 10
         
+        
         redLight.alpha = 0.3
         orangeLight.alpha = 0.3
         greenLight.alpha = 0.3
     }
 
     @IBAction func showTextButtonPresed() {
-       // redLight.alpha = 1.0
-       // showTextButton.setTitle("NEXT", for: .normal)
+        button += 1
+        showTextButton.setTitle("NEXT", for: .normal)
         
-        if orangeLight.alpha == 0.3 &&
+        if button == 1 {
+            redLight.alpha = 1.0
+            
+        } else if button == 2 {
+            orangeLight.alpha = 1.0
+            redLight.alpha = 0.3
+            
+        } else if button == 3 {
+            orangeLight.alpha = 0.3
+            greenLight.alpha = 1.0
+            
+        } else {
+            button = 1
+            greenLight.alpha = 0.3
+            redLight.alpha = 1.0
+            
+        }
+           
+        
+       
+        
+     /*   if orangeLight.alpha == 0.3 &&
             greenLight.alpha == 0.3 {
             redLight.alpha = 1.0
 
@@ -50,7 +73,7 @@ class ViewController: UIViewController {
             greenLight.alpha = 0.3
             redLight.alpha = 1.0
         }
-        
+     */
     }
 }
     
