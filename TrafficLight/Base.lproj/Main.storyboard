@@ -58,6 +58,7 @@
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="eOc-IL-2vF" firstAttribute="centerX" secondItem="Pf3-0F-cBd" secondAttribute="centerX" id="8J5-RL-BJ0"/>
+                            <constraint firstItem="Kuj-dX-eQQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="BfU-Rk-42E"/>
                             <constraint firstItem="Pf3-0F-cBd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cju-y1-V0j"/>
                             <constraint firstItem="eOc-IL-2vF" firstAttribute="leading" secondItem="w5s-2O-Ydf" secondAttribute="leading" id="RFB-4Y-E2M"/>
                             <constraint firstItem="eOc-IL-2vF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="429" id="TNr-ry-6Vv"/>

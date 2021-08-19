@@ -28,8 +28,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showTextButtonPresed() {
-        redLight.alpha = 1.0
-        showTextButton.setTitle("NEXT", for: .normal)
+       // redLight.alpha = 1.0
+       // showTextButton.setTitle("NEXT", for: .normal)
         
         if orangeLight.alpha == 0.3 &&
             greenLight.alpha == 0.3 {
